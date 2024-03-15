@@ -1,0 +1,148 @@
+body, h1, h2, h5, p, ul {
+    margin: 0;
+    padding: 0;
+    font-family: "Bradley Hand", cursive;
+}
+
+nav ul {
+    list-style: none;
+    background-color: #333;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 18px 20px;
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    background-color: lightgrey;
+    color: black;
+}
+
+header img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    padding: auto;
+}
+
+header h1 {
+    padding: 30px;
+    text-align: left;
+    font-size: 4em;
+    color: #333;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding:auto;
+}
+
+.image-section {
+    flex-basis: 30%;
+    margin: 20px;
+}
+
+.image-section img {
+    width: 90%;
+    height: auto;
+}
+
+.text-section {
+    flex-basis: 100%;
+    padding: 20px;
+    text-align: justify;
+}
+
+.text-section h1, .text-section h5 {
+    margin: 10px 0;
+}
+
+.comment-section h2 {
+    text-align: center;
+    margin: 20px;
+}
+
+#commentForm {
+    display: center;
+    flex-direction: column;
+    max-width: 500px;
+    margin: auto;
+    padding: 50px;
+    box-shadow: 0 0 10px grey;
+}
+
+.form {
+    margin-bottom: 20px;
+    display: center;
+}
+
+.form label {
+    margin-bottom: 10px;
+    display: block;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="Age"],
+.form input[type="song suggestion"],
+.form input[type="Your Pet Name"],
+.form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: 10px;
+    border-radius: 100px;
+    margin-top:25px;
+    margin-right: 1000px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #555;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: Pink;
+    color: black;
+    width: 2000px;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1;
+    width: 100%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .container:hover .overlay {
+    opacity: 1;
+  }
