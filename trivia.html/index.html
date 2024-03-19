@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <h3>Who was the best-selling musical artist in the US in 2022?</h3>
+                <button id= "correct">Drake</button>
+                <button class = "incorrect">Taylor Swift</button>
+                <button class = "incorrect">Justin Bieber</button>
+                <button class = "incorrect">Harry Styles</button>
+                <button class = "incorrect">BTS</button>
+                <!-- TODO: Add multiple choice question here -->
+                <p id="ShowAnswer"></p>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <h3>What galaxy do we live in?</h3><!-- TODO: Add free response question here -->
+                <input type ="text" answer = "answer">
+                <input type="submit" id="submit" value="Check Answer" />
+
+            </div>
+        </div>
+        <script src="trivia.js" type = "text/JavaScript"></script>
+    </body>
+</html>
